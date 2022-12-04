@@ -1,0 +1,427 @@
+*::-webkit-input-placeholder {
+  color: $input_placeholder_color;
+  opacity: 1;
+}
+*:-moz-placeholder {
+  color: $input_placeholder_color;
+  opacity: 1;
+}
+*::-moz-placeholder {
+  color: $input_placeholder_color;
+  opacity: 1;
+}
+*:-ms-input-placeholder {
+  color: $input_placeholder_color;
+  opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+
+}
+body input:required:valid,
+body textarea:required:valid {
+
+}
+.form-control {
+  border: $input_border;
+  background-color: $input_bg;
+  border-radius: $input_border_radius;
+  padding: 19px 28px 15px;
+  color: $input_txt_color;
+  font-family: $input_txt_family;
+  font-size: $input_txt_xs_size;
+  line-height: $input_txt_xs_lh;
+  font-weight: 300;
+  //text-transform: uppercase;
+  &:hover {
+    background-color: $input_hover_bg;
+    color: $input_hover_txt_color;
+  }
+  &:focus {
+    box-shadow: none;
+    background-color: $input_hover_bg;
+    color: $input_hover_txt_color;
+    border-color: $btn_bg_color;
+  }
+  &::placeholder {
+    color: $input_placeholder_color;
+    opacity: 0.7;
+  }
+  @media (min-width: 992px) {
+    padding: 31px 48px 29px;
+    font-size: $input_txt_size;
+    line-height: $input_txt_lh;
+  }
+  &.form-control_login {
+    text-align: center;
+    font-size: 15px;
+    @media (min-width: 1200px) {
+      padding: 19px 28px 15px;
+    }
+    @media (min-width: 1500px) {
+      font-size: 24px;
+      padding: 31px 48px 29px;
+    }
+  }
+}
+input.form-control {
+  height: 56px;
+  @media (min-width: 992px) {
+    height: 56px;
+  }
+  @media (min-width: 1200px) {
+    height: 81px;
+  }
+  &.form-control_login {
+    height: 56px;
+    @media (min-width: 1200px) {
+      height: 56px;
+    }
+    @media (min-width: 1500px) {
+      height: 81px;
+    }
+  }
+}
+textarea.form-control {
+  border-radius: $textarea_border_radius_mob;
+  min-height: 130px;
+  @media (min-width: 768px) {
+    height: 130px;
+  }
+  @media (min-width: 1200px) {
+    border-radius: $textarea_border_radius;
+    height: 168px;
+  }
+}
+.form-group_20 {
+  margin-bottom: 1rem;
+  @media (min-width: 768px) {
+    margin-bottom: 1.25rem;
+  }
+}
+.form-group_30 {
+  margin-bottom: 1.875rem;
+}
+.form-group_setlink {
+  margin-top: 35px;
+  @media (min-width: 1200px) {
+    margin: 0;
+  }
+}
+.form-group_40 {
+  margin-bottom: 1.875rem;
+  @media (min-width: 768px) {
+    margin-bottom: 2.5rem;
+  }
+}
+.form-group_index {
+  margin-bottom: 37px;
+  @media (min-width: 768px) {
+    margin-bottom: 37px;
+  }
+}
+.form-group_login {
+  width: 100%;
+  margin-bottom: 22px;
+  @media (min-width: 992px) {
+    margin-bottom: 25px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 27px;
+  }
+  @media (min-width: 1500px) {
+    margin-bottom: 27px;
+  }
+  @media (min-width: 1920px) {
+    margin-bottom: 27px;
+  }
+}
+.form-group_login-btn {
+  margin: 30px 0 0;
+  position: relative;
+  @media (min-width: 1200px) {
+    margin: 29px 0 0;
+  }
+  @media (min-width: 1500px) {
+    margin: 29px 0 0;
+  }
+  @media (min-width: 1920px) {
+    margin: 29px 0 0;
+  }
+}
+.form-group_up-login {
+  margin-top: 30px;
+  margin-bottom: 0;
+  @media (min-width: 1200px) {
+    margin-top: 30px;
+  }
+  @media (min-width: 1920px) {
+    margin-top: 40px;
+  }
+}
+.form-group_input {
+  margin-bottom: 28px;
+  @media (min-width: 1200px) {
+    margin-bottom: 27px;
+  }
+}
+.form-group_input2 {
+  margin-bottom: 17px;
+  @media (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+.form-group_check1 {
+  margin: 0 0 37px;
+  @media (min-width: 992px) {
+    margin: 0 0 37px;
+  }
+  @media (min-width: 1200px) {
+    margin: 0 0 37px;
+  }
+}
+.form-group_check {
+  margin: 43px 0 60px;
+  @media (min-width: 1200px) {
+    margin: 53px 0 57px;
+  }
+}
+.form-group_settings-btn {
+  margin-bottom: 40px;
+  @media (min-width: 768px) {
+    margin-bottom: 48px;
+  }
+}
+.form-group_swicher {
+  margin: 0 0 40px;
+  //padding: 0 0 30px;
+  //border-bottom: 1px solid $bg_dark_1;
+  @media (min-width: 992px) {
+    margin: 0 0 60px;
+    //padding: 0 0 54px;
+  }
+  &.form-group_swicher-last {
+    border-bottom: none;
+  }
+}
+.form-group_btn-unsuscr {
+  margin-top: 40px;
+  @media (min-width: 768px) {
+    margin-top: 88px;
+  }
+}
+
+.custom-file {
+  display: block;
+  width: 262px;
+  height: auto;
+  @media (min-width: 768px) {
+    width: 262px;
+  }
+  @media (min-width: 1200px) {
+    width: 275px;
+  }
+  .custom-file-input {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  .custom-file-area {
+    width: auto;
+    cursor: pointer;
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+}
+
+.btn {
+  width: 100%;
+  height: 58px;
+  padding: 22px 10px 20px;
+  border-radius: 100px;
+  background: $btn_bg_color;
+  border: none;
+  font-family: $font_family;
+  font-size: 15px;
+  font-weight: 500;
+  color: $font_color2;
+  line-height: 1;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  &:hover {
+    color: $font_color;
+    background-color: $btn_bg_color_hover;
+  }
+  &:active {
+    color: $font_color;
+    background-color: $btn_bg_color_active;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  @media (min-width: 992px) {
+    width: auto;
+    height: 90px;
+    font-size: 25px;
+    padding: 34px 15px 28px;
+  }
+  .btn__icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+  }
+  .btn__icon_p {
+    fill: $font_color;
+  }
+  &.btn_1 { //index
+    display: block;
+    width: 100%;
+    max-width: 538px;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      width: 382px;
+    }
+    @media (min-width: 992px) {
+      height: 60px;
+      font-size: 16px;
+      padding: 21px 9px;
+    }
+    @media (min-width: 1200px) {
+      width: 100%;
+      margin: 0;
+    }
+    @media (min-width: 1500px) {
+      width: 100%;
+      margin: 0;
+      height: 96px;
+      font-size: 26px;
+      padding: 32px 15px;
+    }
+  }
+  &.btn-login {
+    @media (min-width: 992px) {
+      width: auto;
+      height: 60px;
+      padding: 21px 9px;
+      font-size: 16px;
+    }
+    @media (min-width: 1200px) {
+      width: auto;
+      height: 60px;
+      padding: 21px 9px;
+      font-size: 16px;
+    }
+    @media (min-width: 1500px) {
+      height: 98px;
+      font-size: 26px;
+      padding: 33px 15px 33px;
+    }
+  }
+  &.btn_2 { //user list
+    width: 100%;
+    height: 32px;
+    font-size: 10px;
+    padding: 12px 10px 10px;
+    @media (min-width: $user_list_item_breakpoint) {
+      height: 63px;
+      font-size: 20px;
+      padding: 22px 15px 20px;
+    }
+  }
+  &.btn_3 { //change photo
+    width: 262px;
+    height: 58px;
+    padding: 24px 10px 20px;
+    border-radius: 100px;
+    font-family: $font_family;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: rgba($btn_bg_color, 0.7);
+    color: $font_color3;
+    text-transform: uppercase;
+    border: none;
+    &:hover {
+      background-color: rgba($btn_bg_color_hover, 0.7);
+      color: $font_color2;
+    }
+    @media (min-width: 992px) {}
+    @media (min-width: 1200px) {
+      font-size: 16px;
+      padding: 30px 15px 24px;
+      width: 275px;
+      height: 72px;
+    }
+  }
+  &.btn_4 { //signout
+    height: 60px;
+    padding: 22px 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: $bg_light_2;
+    color: $font_color;
+    border: none;
+    &:hover {
+      background-color: $btn_bg_color_hover;
+      color: $font_color2;
+    }
+    @media (min-width: 992px) {}
+    @media (min-width: 1200px) {
+      font-size: 24px;
+      padding: 21px 15px;
+      width: 280px;
+      height: 66px;
+    }
+  }
+  &.btn_w100 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .col-xxl-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+  .col-xxl-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-xxl-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+  .col-xxl-set1 {
+    flex: 0 0 538px;
+    max-width: 538px;
+  }
+  .col-xxl-set2 {
+    flex: 0 0 753px;
+    max-width: 753px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .col-xxxl-40 {
+    flex: 0 0 39%;
+    max-width: 39%;
+  }
+  .col-xxxl-60 {
+    flex: 0 0 61%;
+    max-width: 61%;
+  }
+}
+
+@media (min-width: 576px) {
+  .px-sm-15px {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}

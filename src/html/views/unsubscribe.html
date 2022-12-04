@@ -1,40 +1,61 @@
 <%= _.template(require('./../includes/header.html'))() %>
-    <main class="main">
-        <div class="container container_unsubscribe">
-            <div class="row">
-                <div class="col">
-                    <h2>Your Subscriptions</span></h2>
-                    <form action="">
-                        <div class="form-group form-group_swicher">
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
-                                <label class="custom-control-label" for="customSwitch1">We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture. NF, in an abbreviated form</label>
-                            </div>
-                        </div>
-                        <div class="form-group form-group_swicher">
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="customSwitch2" checked>
-                                <label class="custom-control-label" for="customSwitch2">We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture. NF, in an abbreviated form</label>
-                            </div>
-                        </div>
-                        <div class="form-group form-group_swicher">
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="customSwitch3">
-                                <label class="custom-control-label" for="customSwitch3">We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture. NF, in an abbreviated form</label>
-                            </div>
-                        </div>
-                        <div class="form-group form-group_swicher form-group_swicher-last">
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="customSwitch4">
-                                <label class="custom-control-label" for="customSwitch4">We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture. NF, in an abbreviated form</label>
-                            </div>
-                        </div>
-                        <div class="form-group form-group_btn-unsuscr">
-                            <button class="btn btn_w100">Save Preferences</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+  <main class="main">
+    <div class="container container_unsubscribe">
+      <div class="row">
+        <div class="col-12 col-xl-4 text-center text-xl-start">
+          <h2>Your <span class="d-none d-xl-block">Subsc<span>-<br></span>riptions</span><span class="d-block d-xl-none">Subscriptions</span></h2>
         </div>
-    </main>
+        <div class="col-12 col-xl-8">
+          <form action="">
+            <div class="customcheck customcheck_switch">
+              <input type="checkbox" class="customcheck__input" name="check1" id="switch1" autocomplete="off">
+              <label class="customcheck__label" for="switch1">
+                <div class="customcheck__icon"><div class="customcheck__mark"></div></div>
+                <div class="customcheck__txt">We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture. NF, in an abbreviated form</div>
+              </label>
+            </div>
+            <div class="customcheck customcheck_switch">
+              <input type="checkbox" class="customcheck__input" name="check2" id="switch2" checked autocomplete="off">
+              <label class="customcheck__label" for="switch2">
+                <div class="customcheck__icon"><div class="customcheck__mark"></div></div>
+                <div class="customcheck__txt">We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture. NF, in an abbreviated form</div>
+              </label>
+            </div>
+            <div class="customcheck customcheck_switch">
+              <input type="checkbox" class="customcheck__input" name="check3" id="switch3" autocomplete="off">
+              <label class="customcheck__label" for="switch3">
+                <div class="customcheck__icon"><div class="customcheck__mark"></div></div>
+                <div class="customcheck__txt">We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture. NF, in an abbreviated form</div>
+              </label>
+            </div>
+            <div class="customcheck customcheck_switch">
+              <input type="checkbox" class="customcheck__input" name="check4" id="switch4" checked autocomplete="off">
+              <label class="customcheck__label" for="switch4">
+                <div class="customcheck__icon"><div class="customcheck__mark"></div></div>
+                <div class="customcheck__txt">We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture. NF, in an abbreviated form</div>
+              </label>
+            </div>
+            <div class="customcheck customcheck_switch">
+              <input type="checkbox" class="customcheck__input" name="check5" id="switch5" autocomplete="off">
+              <label class="customcheck__label" for="switch5">
+                <div class="customcheck__icon"><div class="customcheck__mark"></div></div>
+                <div class="customcheck__txt">We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture. NF, in an abbreviated form</div>
+              </label>
+            </div>
+            <div class="customcheck customcheck_switch">
+              <input type="checkbox" class="customcheck__input" name="check6" id="switch6" checked autocomplete="off">
+              <label class="customcheck__label" for="switch6">
+                <div class="customcheck__icon"><div class="customcheck__mark"></div></div>
+                <div class="customcheck__txt">We have created a unique combination system that consists of three main factors that produce similarity of thought and productive connections: Life, freedom and culture. NF, in an abbreviated form</div>
+              </label>
+            </div>
+
+            <div class="form-group form-group_btn-unsuscr">
+              <button class="btn btn_w100">Save Preferences</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
 <%= _.template(require('./../includes/footer.html'))() %>

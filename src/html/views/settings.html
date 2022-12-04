@@ -21,13 +21,19 @@
                     <div class="col-12 col-xl-6">
                         <div class="settings-form">
                             <div class="form-group form-group_check1">
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline1">Male</label>
+                                <div class="customcheck customcheck_radio">
+                                  <input type="radio" class="customcheck__input" name="radio1" id="radio1" autocomplete="off">
+                                  <label class="customcheck__label" for="radio1">
+                                    <div class="customcheck__icon"><div class="customcheck__mark"></div></div>
+                                    <div class="customcheck__txt">Male</div>
+                                  </label>
                                 </div>
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline2">Female</label>
+                                <div class="customcheck customcheck_radio">
+                                  <input type="radio" class="customcheck__input" name="radio1" id="radio2" checked autocomplete="off">
+                                  <label class="customcheck__label" for="radio2">
+                                    <div class="customcheck__icon"><div class="customcheck__mark"></div></div>
+                                    <div class="customcheck__txt">Female</div>
+                                  </label>
                                 </div>
                             </div>
                             <div class="form-group form-group_input">
@@ -42,10 +48,13 @@
                             <div class="form-group form-group_check">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="form-group-check-wrap__item">
-                                        <div class="custom-control custom-switch custom-switch_inline">
-                                            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
-                                            <label class="custom-control-label" for="customSwitch1">Notify me of site updates</label>
-                                        </div>
+                                      <div class="customcheck customcheck_switch customcheck_switch-inline">
+                                        <input type="checkbox" class="customcheck__input" name="check1" id="switch1" autocomplete="off">
+                                        <label class="customcheck__label" for="switch1">
+                                          <div class="customcheck__icon"><div class="customcheck__mark"></div></div>
+                                          <div class="customcheck__txt">Notify me of site updates</div>
+                                        </label>
+                                      </div>
                                     </div>
                                 </div>
                             </div>
