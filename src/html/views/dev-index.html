@@ -1,9 +1,4 @@
 <%= _.template(require('./../includes/header-index.html'))() %>
-
-  <div id="page-preloader" class="preloader">
-    <div class="loader"></div>
-  </div>
-
   <main class="main">
     <div class="firstscreen">
       <div class="firstscreen__header d-xl-none">
@@ -27,36 +22,20 @@
               <div class="logo__txt">gone wild</div>
             </div>
           </div>
-          <div class="firstscreen__info firstscreen__info1 display display_01">
+          <div class="firstscreen__info firstscreen__info1" style="display: block">
             <h1 class="h1_index">Amazing&nbsp;<br class="d-xl-none">Girls Is<br>Waiting Best<br>Matches For You</h1>
             <button class="btn btn_1 btn-index">Unlock My Matches</button>
           </div>
-          <div class="firstscreen__info firstscreen__info2 display display_02">
+          <div class="firstscreen__info firstscreen__info2" style="display: none;">
             <div class="h1_search">Searching&nbsp;<br class="d-xl-none">the&nbsp;<br class="d-none d-xl-block">best&nbsp;<br class="d-sm-none">girls<br>Anylizing matches</div>
             <div class="search-progress progress">
               <div class="search-progress__title">
-                <span class="search-progress__span search-progress__span1" style="display: inline">Analyze Your Location</span>
-                <span class="search-progress__span search-progress__span2" style="display: none">Analyze Your Interests</span>
-                <span class="search-progress__span search-progress__span3" style="display: none">Analyze Your Gender Match</span>
+                <span class="search-progress__span search-progress__span1" style="display: inline">Analize Your Location</span>
+                <span class="search-progress__span search-progress__span2" style="display: none">Analize Your Interests</span>
+                <span class="search-progress__span search-progress__span3" style="display: none">Analize Your Gender Match</span>
               </div>
-              <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-          </div>
-          <div class="firstscreen__info firstscreen__info3 display display_03">
-            <div class="h1_login">Sign up to<br>unlock girls</div>
-            <form action="">
-              <div class="firstscreen__header-inner">
-                <div class="form-group form-group_login">
-                  <input class="form-control form-control_login" type="text" placeholder="Email">
-                </div>
-                <div class="form-group form-group_login">
-                  <input class="form-control form-control_login" type="password" placeholder="Password">
-                </div>
-                <div class="form-group form-group_login form-group_login-btn">
-                  <button class="btn-login btn btn_w100">Sign Up</button>
-                </div>
-              </div>
-            </form>
           </div>
         </div>
       </div>
@@ -81,7 +60,4 @@
       </div>
     </div>
   </main>
-
-<%= _.template(require('./../includes/animation-js.html'))() %>
-
 <%= _.template(require('./../includes/footer.html'))() %>

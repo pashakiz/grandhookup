@@ -1,18 +1,13 @@
 import '@scss/main.scss'
 
-const foo = bar => console.log('some...', bar);
-foo('bar');
-
-
 //preloader
 const preloader = () => {
   setTimeout(function () {
     let preloader = document.body.querySelector('#page-preloader');
-    if (preloader != null) {
-      if (!preloader.classList.contains('done')) {
-        preloader.classList.add('done');
-      }
-    }
+    if (!preloader)
+      return false
+    if (!preloader.classList.contains('done'))
+      preloader.classList.add('done');
   }, 1000);
 }
 document.addEventListener('DOMContentLoaded', preloader, false);
@@ -25,4 +20,5 @@ const uploadPhoto = () => {
   profilePhoto.style.backgroundImage = 'url(' + url + ')';
   console.log('uploadPhoto');
 }
-uploadPhotoInput.addEventListener('change', uploadPhoto, false);
+if (!!uploadPhotoInput)
+  uploadPhotoInput.addEventListener('change', uploadPhoto, false);

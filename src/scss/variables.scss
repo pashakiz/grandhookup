@@ -1,3 +1,203 @@
-$container-xxl:             1380px;
+$container-xl:              1140px;
+$container-xxl:             1320px;
 $container-xxxl:            1640px;
-.var {color: black}
+$body_bg_color:             #9FB7DE;
+$btn_bg_color:              #FFF705;
+$btn_bg_color_hover:        #FFFA72;
+$btn_bg_color_active:       #FFF;
+/**/$bg_dark_1:                 #1E1C1C;
+/**/$bg_dark_2:                 #434343;
+/**/$bg_light_1:                #515151;
+/**/$bg_light_2:                #ACFFF1;
+/**/$bg_light_3:                #F6EFDF;
+/**/$bg_light_4:                #E8E1DF;
+$font_color:                #FFF;
+$font_color2:               #525F73;
+$font_color3:               #6388C2;
+$font_family:               "Inter", sans-serif;
+$font_weight:               400;
+$font_size:                 16px;
+$font_size_mobile:          15px;
+$body_mb:                   69px;
+$body_mb_lg:                69px;
+$body_mb_xs:                69px;
+$font_family2:              "PlayfairDisplay", sans-serif;
+$link_txt_family:           $font_family;
+$link_color:                $btn_bg_color;
+$link_hover_color:          $btn_bg_color_hover;
+$link_active_color:         $font_color;
+/**/$link_hover_color1:         #bd7667;
+/**/$link_hover_color2:         $link_hover_color;
+$footer_height:             260px;
+$footer_height_lg:          260px;
+$footer_height_xs:          245px;
+$footer_text_color:         $link_color;
+$footer_text_color_hover:   $link_hover_color;
+$footer_text_color_active:  $link_active_color;
+
+//Form
+/**/$input_bg:                  $bg_light_1;
+/**/$input_hover_bg:            rgba($btn_bg_color, 0.19);
+/**/$input_txt_family:          $font_family;
+/**/$input_txt_color:           $font_color3;
+/**/$input_hover_txt_color:     $font_color3;
+/**/$input_placeholder_color:   $font_color2;
+/**/$input_txt_xs_size:         15px;
+/**/$input_txt_xs_lh:           1.5;
+/**/$input_txt_size:            21px;
+/**/$input_txt_lh:              1.5;
+/**/$input_border_color:        $input_bg;
+/**/$input_border:              none;
+/**/$input_hover_border:        $input_border;
+/**/$input_border_radius:       100px;
+/**/$textarea_border_radius:    23px;
+/**/$textarea_border_radius_mob:23px;
+
+//Custom Checkbox
+/**/$checkbox_xs_width:             38px;
+/**/$checkbox_xs_height:            20px;
+/**/$checkbox_xs_space_text:        19px;
+/**/$checkbox_xs_padding_left:      $checkbox_xs_width + $checkbox_xs_space_text;
+/**/$checkbox_xs_left:              -$checkbox_xs_width - $checkbox_xs_space_text;
+/**/$checkbox_xs_top:               8px;
+/**/$checkbox_xs_marker_width:      38px;
+/**/$checkbox_xs_marker_height:     20px;
+/**/$checkbox_xs_marker_top:        11px;
+/**/$checkbox_xs_marker_left:       $checkbox_xs_left + 3px;
+
+/**/$checkbox_width:                52px;
+/**/$checkbox_height:               27px;
+/**/$checkbox_space_text:           27px;
+/**/$checkbox_padding_left:         $checkbox_width + $checkbox_space_text;
+/**/$checkbox_left:                 -$checkbox_width - $checkbox_space_text;
+/**/$checkbox_top:                  11px;
+/**/$checkbox_marker_width:         52px;
+/**/$checkbox_marker_height:        27px;
+/**/$checkbox_marker_top:           16px;
+/**/$checkbox_marker_left:          $checkbox_left + 5px;
+
+/**/$checkbox_txt_family:           $font_family;
+/**/$checkbox_txt_color:            $font_color;
+/**/$checkbox_txt_xs_size:          16px;
+/**/$checkbox_txt_size:             19px;
+/**/$checkbox_txt_xs_lh:            30px;
+/**/$checkbox_txt_lh:               36px;
+/**/$checkbox_bg_color:             transparent;
+/**/$checkbox_checked_bg_color:     $btn_bg_color;
+/**/$checkbox_border:               1px solid #000;
+/**/$checkbox_checked_border_color: #000;
+/**/$checkbox_active_bg_color:      transparent;
+/**/$checkbox_bg_icon:              '';
+/**/$checkbox_bg_icon_checked:      '../img/icons/checkbox-checked.svg';
+/**/$checkbox_checked_marker_color: #000;
+
+//Custom RadioButton
+/**/$radio_xs_width:             38px;
+/**/$radio_xs_height:            38px;
+/**/$radio_xs_marker_width:      15px;
+/**/$radio_xs_marker_height:     15px;
+/**/$radio_xs_space_text:        18px;
+/**/$radio_xs_left:              -$radio_xs_width - $radio_xs_space_text;
+/**/$radio_xs_top:               -8px;
+/**/$radio_xs_padding_left:      $radio_xs_width + $radio_xs_space_text;
+/**/$radio_xs_marker_top:        3px;
+/**/$radio_xs_marker_left:       $radio_xs_left + 11px;
+
+/**/$radio_width:                42px;
+/**/$radio_height:               42px;
+/**/$radio_marker_width:         16px;
+/**/$radio_marker_height:        16px;
+/**/$radio_space_text:           19px;
+/**/$radio_left:                 -$radio_width - $radio_space_text;
+/**/$radio_top:                  -5px;
+/**/$radio_padding_left:         $radio_width + $radio_space_text;
+/**/$radio_marker_top:           8px;
+/**/$radio_marker_left:          $radio_left + 13px;
+/**/$radio_checked_marker_color: transparent;
+/**/$radio_marker_border_color:  $btn_bg_color;
+/**/$radio_marker_border_xs:     1px solid $radio_marker_border_color;
+/**/$radio_marker_border_xl:     2px solid $radio_marker_border_color;
+
+/**/$radio_txt_family:           $font_family;
+/**/$radio_txt_weight:           400;
+/**/$radio_txt_color:            $font_color3;
+/**/$radio_txt_xs_size:          15px;
+/**/$radio_txt_size:             21px;
+/**/$radio_txt_xs_lh:            1.5;
+/**/$radio_txt_lh:               1.5;
+/**/$radio_bg_color:             transparent;
+/**/$radio_checked_bg_color:     $radio_bg_color;
+/**/$radio_border_color:         #fff;
+/**/$radio_border_xs:            1px solid $radio_border_color;
+/**/$radio_border_xl:            2px solid $radio_border_color;
+//$radio_hover_border:         $radio_border;
+/**/$radio_checked_border_color: #fff;
+/**/$radio_active_bg_color:      $radio_bg_color;
+/**/$radio_bg_icon:              "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='4' fill='%234E464F'/%3E%3C/svg%3E";
+
+//Custom Switch
+/**/$switch_bg_width: 91px;
+/**/$switch_bg_height: 48px;
+/**/$switch_bg_width_mob: 45px;
+/**/$switch_bg_height_mob: 24px;
+/**/$switch_bg_border_radius: 100px;
+/**/$switch_dot_size_w: 25px;
+/**/$switch_dot_size_h: 25px;
+/**/$switch_dot_size_w_mob: 12px;
+/**/$switch_dot_size_h_mob: 12px;
+/**/$switch_dot_border_radius: 100%;
+/**/$switch_bg_color: transparent;
+/**/$switch_bg_color_active: $switch_bg_color;
+/**/$switch_bg_color_checked: $switch_bg_color;
+/**/$switch_dot_color: transparent;
+/**/$switch_dot_color_active: $switch_dot_color;
+/**/$switch_dot_color_checked: $switch_dot_color;
+/**/$switch_border_color: #6B6B6B;
+/**/$switch_border_color_active: #fff;
+/**/$switch_border_xs: 1px solid $switch_border_color;
+/**/$switch_border_xl: 2px solid $switch_border_color;
+/**/$switch_dot_border_color: $switch_border_color;
+/**/$switch_dot_border_color_active: $btn_bg_color;
+/**/$switch_dot_border_xs: 1px solid $switch_dot_border_color;
+/**/$switch_dot_border_xl: 3px solid $switch_dot_border_color;
+/**/$switch_txt: '';
+/**/$switch_txt_color: #000;
+/**/$switch_txt_color_checked: #000;
+/**/$switch_dot_txt_1: 'On';
+/**/$switch_dot_txt_0: 'Off';
+/**/$switch_dot_txt_size_mob: 16px;
+/**/$switch_dot_txt_size: 20px;
+/**/$switch_dot_txt_padding_mob: 0;
+/**/$switch_dot_txt_padding: 0;
+/**/$switch_dot_txt_color: $font_color;
+/**/$switch_dot_txt_color_checked: $font_color;
+/**/$switch_margin_right: 63px;
+/**/$switch_margin_right_mob: 33px;
+/**/$switch_margin_right_inline: 34px;
+/**/$switch_margin_right_inline_mob: 18px;
+/**/$switch_margin_top: 0;
+/**/$switch_margin_top_mob: 0;
+/**/$switch_label_fontfamily: $font_family;
+/**/$switch_label_fontweight: 300;
+/**/$switch_label_fontsize: $font_size;
+/**/$switch_label_fontsize_mob: $font_size_mobile;
+/**/$switch_label_lineheight: 37px;
+/**/$switch_label_lineheight_mob: 23px;
+
+//Bootstrap container width
+@function get-container-width($key: 'md') {
+  @return map-get($container-max-widths, $key);
+}
+
+//User List page wider
+/**/$user_list_wider:           160px;
+/**/$user_list_item_breakpoint: 992px;
+/**/$user_list_title_color:     $font_color2;
+
+/**/
+@mixin circle($diameter, $background-color) {
+  width: $diameter;
+  height: $diameter;
+  background-color: $background-color;
+  border-radius: 100%;
+}
