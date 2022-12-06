@@ -27,13 +27,13 @@ body textarea:required:valid {
   border: $input_border;
   background-color: $input_bg;
   border-radius: $input_border_radius;
-  padding: 19px 28px 15px;
+  padding: 12px 19px;
   color: $input_txt_color;
   font-family: $input_txt_family;
   font-size: $input_txt_xs_size;
   line-height: $input_txt_xs_lh;
-  font-weight: 300;
-  //text-transform: uppercase;
+  font-weight: 400;
+  text-transform: uppercase;
   &:hover {
     background-color: $input_hover_bg;
     color: $input_hover_txt_color;
@@ -49,7 +49,7 @@ body textarea:required:valid {
     opacity: 0.7;
   }
   @media (min-width: 992px) {
-    padding: 31px 48px 29px;
+    padding: 18px 30px;
     font-size: $input_txt_size;
     line-height: $input_txt_lh;
   }
@@ -57,41 +57,41 @@ body textarea:required:valid {
     text-align: center;
     font-size: 15px;
     @media (min-width: 1200px) {
-      padding: 19px 28px 15px;
+      padding: 18px 30px;
     }
     @media (min-width: 1500px) {
-      font-size: 24px;
-      padding: 31px 48px 29px;
+      font-size: 22px;
+      padding: 18px 30px;
     }
   }
 }
 input.form-control {
-  height: 56px;
+  height: 46px;
   @media (min-width: 992px) {
-    height: 56px;
+    height: 70px;
   }
   @media (min-width: 1200px) {
-    height: 81px;
+    height: 70px;
   }
   &.form-control_login {
-    height: 56px;
+    height: 46px;
     @media (min-width: 1200px) {
-      height: 56px;
+      height: 70px;
     }
     @media (min-width: 1500px) {
-      height: 81px;
+      height: 70px;
     }
   }
 }
 textarea.form-control {
   border-radius: $textarea_border_radius_mob;
-  min-height: 130px;
+  min-height: 110px;
   @media (min-width: 768px) {
     height: 130px;
   }
   @media (min-width: 1200px) {
     border-radius: $textarea_border_radius;
-    height: 168px;
+    height: 165px;
   }
 }
 .form-group_20 {
@@ -161,9 +161,9 @@ textarea.form-control {
   }
 }
 .form-group_input {
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   @media (min-width: 1200px) {
-    margin-bottom: 27px;
+    margin-bottom: 34px;
   }
 }
 .form-group_input2 {
@@ -173,18 +173,18 @@ textarea.form-control {
   }
 }
 .form-group_check1 {
-  margin: 0 0 37px;
+  margin: 37px 0 35px;
   @media (min-width: 992px) {
-    margin: 0 0 37px;
+    margin: 37px 0 35px;
   }
   @media (min-width: 1200px) {
-    margin: 0 0 37px;
+    margin: 44px 0 36px;
   }
 }
 .form-group_check {
-  margin: 43px 0 60px;
-  @media (min-width: 1200px) {
-    margin: 53px 0 57px;
+  margin: 31px 0 31px;
+  @media (min-width: 992px) {
+    margin: 34px 0 42px;
   }
 }
 .form-group_settings-btn {

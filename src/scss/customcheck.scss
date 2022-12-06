@@ -1,14 +1,9 @@
+//checkbox
 $cc_font_color: $font_color;
 $cc_icon_color: $btn_bg_color;
 $cc_font_size_mob: 15px;
 $cc_font_size: 22px;
 
-$cs_font_color: $font_color;
-$cs_icon_color: $btn_bg_color;
-$cs_font_size_mob: 15px;
-$cs_font_size: 16px;
-
-//checkbox
 $cc_icon_width_mob: 30px;
 $cc_icon_height_mob: 30px;
 $cc_icon_width: 47px;
@@ -22,6 +17,11 @@ $cc_mark_width: 15px;
 $cc_mark_height: 15px;
 
 //switcher
+$cs_font_color: $font_color;
+$cs_icon_color: $btn_bg_color;
+$cs_font_size_mob: 15px;
+$cs_font_size: 16px;
+
 $cs_icon_width_mob: 48px;
 $cs_icon_height_mob: 14px;
 $cs_icon_width: 70px;
@@ -36,6 +36,12 @@ $cs_mark_height: 40px;
 
 $cs_mark_color_off: $font_color;
 $cs_mark_color_on: $cs_icon_color;
+
+//switcher inline
+$csi_font_size_mob: 15px;
+$csi_font_size: 22px;
+$csi_icon_right_mob: 17px;
+$csi_icon_right: 40px;
 
 .customcheck {
   display: block;
@@ -117,6 +123,16 @@ $cs_mark_color_on: $cs_icon_color;
   }
 }
 
+.customcheck_radio-inline {
+  margin: 0;
+  + .customcheck_radio-inline {
+    margin: 0 0 0 63px;
+    @media (min-width: 992px) {
+      margin: 0 0 0 71px;
+    }
+  }
+}
+
 .customcheck_switch {
   .customcheck__label {
     align-items: flex-start;
@@ -189,4 +205,23 @@ $cs_mark_color_on: $cs_icon_color;
 
 }
 
-.customcheck_switch-inline {}
+.customcheck_switch-inline {
+  margin: 0;
+
+  .customcheck__label {
+    text-transform: uppercase;
+    line-height: 24px;
+    font-size: $csi_font_size_mob;
+    margin-bottom: 0;
+    @media (min-width: 992px) {
+      font-size: $csi_font_size;
+    }
+
+    .customcheck__icon {
+      margin-right: $csi_icon_right_mob;
+      @media (min-width: 992px) {
+        margin-right: $csi_icon_right;
+      }
+    }
+  }
+}
