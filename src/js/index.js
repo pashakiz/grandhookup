@@ -1,3 +1,6 @@
+import Splide from '@splidejs/splide';
+import '@splidejs/splide/css/core';
+//import '@splidejs/splide/css';
 import '@scss/main.scss'
 
 //preloader
@@ -22,3 +25,41 @@ const uploadPhoto = () => {
 }
 if (!!uploadPhotoInput)
   uploadPhotoInput.addEventListener('change', uploadPhoto, false);
+
+
+// Splidejs (cursor customisation)
+const splides = document.querySelectorAll('.splide');
+
+const splideIsDrag = (e) => {
+  if (e.target.closest('.splide') === null)
+    return false
+  e.target.closest('.splide').classList.add('is-grab');
+}
+
+const splideIsntDrag = (e) => {
+  if (e.target.closest('.splide') === null)
+    return false
+  e.target.closest('.splide').classList.remove('is-grab');
+}
+
+if (!!splides) {
+  splides.forEach(el => el.addEventListener('mousedown', splideIsDrag, false));
+  splides.forEach(el => el.addEventListener('mouseup', splideIsntDrag, false));
+}
+
+// Splidejs
+// https://github.com/Splidejs/splide
+
+if (document.querySelector('.splide_up') !== null) {
+  new Splide( '.splide_up', {
+    type       : 'loop',
+    arrows     : false,
+    autoHeight : true,
+    perPage    : 1,
+    breakpoints: {
+      640: {
+        //height: '6rem',
+      },
+    },
+  } ).mount();
+}

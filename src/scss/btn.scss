@@ -1,7 +1,7 @@
 .btn {
   width: 100%;
   height: 46px;
-  padding: 10px 10px;
+  padding: 13px 10px;
   border-radius: 0;
   background-color: $btn_bg_color;
   border: none;
@@ -30,7 +30,7 @@
     width: auto;
     height: 88px;
     font-size: 28px;
-    padding: 20px 15px;
+    padding: 27px 15px;
   }
 
   .btn__icon {
@@ -127,7 +127,7 @@
       height: 70px;
     }
   }
-  
+
   &.btn_4 { //signout
     height: 60px;
     padding: 22px 10px;

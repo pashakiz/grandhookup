@@ -1,0 +1,49 @@
+.splide {
+  cursor: grab;
+  &.is-grab {
+    cursor: grabbing;
+  }
+}
+
+.splide__pagination {}
+.splide__pagination__page {
+  background: $body_bg_color;
+  border: 0;
+  border-radius: 0;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin: 0 7px;
+  padding: 0;
+  position: relative;
+  transition: background-color .2s ease, color .2s ease;
+  @media (min-width: 992px) {
+    width: 15px;
+    height: 15px;
+    margin: 0 12px;
+  }
+
+  &.is-active {
+    background: $btn_bg_color;
+  }
+}
+
+.splide_up {
+  .splide__track {
+    @include img-mask('../img/photos/mask.svg');
+  }
+  .splide__pagination {
+    transform: translateY(-39px);
+    margin-bottom: -15px;
+    @media (min-width: 992px) {
+      transform: translateY(-81px);
+      margin-bottom: -18px;
+    }
+  }
+  .splide__pagination__page {}
+}
+
+.splide_ulist {
+  .splide__pagination {}
+  .splide__pagination__page {}
+}
