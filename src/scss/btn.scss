@@ -97,29 +97,37 @@
     }
   }
   &.btn_3 { //change photo
-    width: 262px;
-    height: 58px;
-    padding: 24px 10px 20px;
-    border-radius: 100px;
+    width: 159px;
+    height: 30px;
+    padding: 5px 5px;
+    border-radius: 0;
     font-family: $font_family;
     font-weight: 400;
-    font-size: 14px;
-    background-color: rgba($btn_bg_color, 0.7);
-    color: $font_color3;
+    font-size: 15px;
+    background-color: $btn_bg_color_active;
+    color: $font_color4;
     text-transform: uppercase;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:hover {
-      background-color: rgba($btn_bg_color_hover, 0.7);
-      color: $font_color2;
+      background-color: $btn_bg_color_hover;
+      color: $font_color4 !important;
+    }
+    &:active {
+      background-color: $btn_bg_color !important;
+      color: $font_color4 !important;
     }
     @media (min-width: 992px) {}
     @media (min-width: 1200px) {
-      font-size: 16px;
-      padding: 30px 15px 24px;
-      width: 275px;
-      height: 72px;
+      font-size: 22px;
+      padding: 15px 15px;
+      width: 329px;
+      height: 70px;
     }
   }
+  
   &.btn_4 { //signout
     height: 60px;
     padding: 22px 10px;

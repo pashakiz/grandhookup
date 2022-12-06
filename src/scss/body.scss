@@ -21,6 +21,11 @@ body {
 }
 
 .container {
+  @include make-container(40px);
+  @media (min-width: 768px) {
+    @include make-container(24px);
+  }
+
   &.container_text {
     padding-top: 7px;
     @media (min-width: 992px) {

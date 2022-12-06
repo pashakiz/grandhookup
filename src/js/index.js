@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', preloader, false);
 
 //upload photo
 const uploadPhotoInput = document.querySelector('.custom-file-input');
-const profilePhoto = document.querySelector('.profile-photo');
+const profilePhoto = document.querySelector('.settings-photo .profile-photo');
 const uploadPhoto = () => {
-  let url = 'img/photos/ava.jpg';
+  let url = 'assets/img/photos/ava.jpg';
   profilePhoto.style.backgroundImage = 'url(' + url + ')';
   console.log('uploadPhoto');
 }

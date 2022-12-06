@@ -293,14 +293,16 @@ a {
 .link2 {
   font-family: $font_family;
   font-weight: 400;
-  color: $font_color;
+  color: $link_color;
   font-size: 16px;
   text-transform: uppercase;
   &:hover {
-    color: $link_hover_color2;
+    color: $link_hover_color;
+  }
+  &:active {
+    color: $link_active_color;
   }
   @media (min-width: 992px) {
-    color: $link_color;
-    font-size: 24px;
+    font-size: 22px;
   }
 }

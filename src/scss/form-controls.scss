@@ -214,19 +214,26 @@ textarea.form-control {
 
 .custom-file {
   display: block;
-  width: 262px;
+  width: 159px;
   height: auto;
+  position: relative;
   @media (min-width: 768px) {
-    width: 262px;
+    width: 159px;
   }
   @media (min-width: 1200px) {
-    width: 275px;
+    width: 329px;
   }
+
   .custom-file-input {
+    position: relative;
     width: 100%;
     height: 100%;
     z-index: 0;
+    margin: 0;
+    overflow: hidden;
+    opacity: 0;
   }
+
   .custom-file-area {
     width: auto;
     cursor: pointer;
@@ -236,7 +243,7 @@ textarea.form-control {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 2;
   }
 }
 
