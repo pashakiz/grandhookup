@@ -42,6 +42,12 @@ body {
       @include make-container(30px);
     }
   }
+
+  &.container_xxxl {
+    @media (min-width: 1650px) {
+      max-width: $container-xxxl;
+    }
+  }
 }
 
 .preloader {

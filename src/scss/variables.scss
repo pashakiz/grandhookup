@@ -61,9 +61,8 @@ $textarea_border_radius_mob:0;
 }
 
 //User List page wider
-/**/$user_list_wider:           160px;
 $user_list_item_breakpoint: 992px;
-/**/$user_list_title_color:     $font_color2;
+$user_list_title_color:     $btn_bg_color;
 
 /**/
 @mixin circle($diameter, $background-color) {
@@ -73,17 +72,17 @@ $user_list_item_breakpoint: 992px;
   border-radius: 100%;
 }
 
-@mixin img-mask($url) {
+@mixin img-mask($url, $top, $left, $width, $height) {
   &::after {
     content: '';
     display: block;
     position: absolute;
-    top: -1px;
-    left: -1px;
+    top: $top;
+    left: $left;
     right: 0;
     bottom: 0;
-    width: calc(100% + 2px);
-    height: calc(100% + 2px);
+    width: $width;
+    height: $height;
     background-image: url($url);
     z-index: 1;
   }

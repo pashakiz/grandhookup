@@ -49,7 +49,7 @@
   background-position: 50%;
   background-size: cover;
   position: relative;
-  @include img-mask('../img/photos/mask.svg');
+  @include img-mask('../img/photos/mask.svg', -1px, -1px, calc(100% + 2px), calc(100% + 2px));
 
   @media (min-width: 400px) {
     height: 246px;

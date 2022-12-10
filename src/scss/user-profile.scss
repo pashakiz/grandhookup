@@ -126,9 +126,9 @@
   display: inline-block;
   padding-left: 15px;
   transform: translateY(-4px);
-    @media (min-width: 1200px) {
-      transform: translateY(-6px);
-    }
+  @media (min-width: 1200px) {
+    transform: translateY(-6px);
+  }
 }
 
 .userprofile__sep {
@@ -199,32 +199,32 @@
   }
 
   &.compatibility_list {
-    margin-bottom: 15px;
+    padding: 0 10px 14px;
     @media (min-width: $user_list_item_breakpoint) {
-      margin-bottom: 39px;
+      padding: 0 20px 38px;
     }
     .compatibility__progress {
-      .dotmark {
-        width: 11px;
-        height: 6px;
-        + .dotmark {
-          margin-left: 3px;
-        }
+      &.progress {
+        width: 34px;
+        height: 13px;
         @media (min-width: $user_list_item_breakpoint) {
-          width: 22px;
-          height: 12px;
-          + .dotmark {
-            margin-left: 6px;
+          width: 90px;
+          height: 28px;
+        }
+        .progress-bar {
+          font-size: 7px;
+          @media (min-width: $user_list_item_breakpoint) {
+            font-size: 16px;
           }
         }
       }
     }
     .compatibility__title {
-      font-size: 7px;
-      margin-top: 8px;
+      font-size: 6px;
+      margin-bottom: 6px;
       @media (min-width: $user_list_item_breakpoint) {
-        font-size: 14px;
-        margin-top: 18px;
+        font-size: 16px;
+        margin-bottom: 17px;
       }
     }
   }

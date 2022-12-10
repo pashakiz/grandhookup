@@ -56,9 +56,20 @@ if (document.querySelector('.splide_up') !== null) {
     arrows     : false,
     autoHeight : true,
     perPage    : 1,
+  } ).mount();
+}
+
+if (document.querySelector('.splide_ulist') !== null) {
+  new Splide( '.splide_ulist', {
+    type       : 'loop',
+    arrows     : false,
+    autoHeight : true,
+    autoWidth  : true,
+    gap        : '50px',
+    //perPage    : 4,
     breakpoints: {
-      640: {
-        //height: '6rem',
+      992: {
+        gap    : '20px',
       },
     },
   } ).mount();
