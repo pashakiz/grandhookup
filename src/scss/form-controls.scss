@@ -55,9 +55,12 @@ body textarea:required:valid {
   }
   &.form-control_login {
     text-align: center;
-    font-size: 15px;
+    font-size: $input_txt_xs_size;
+    line-height: $input_txt_xs_lh;
     @media (min-width: 1200px) {
       padding: 18px 30px;
+      font-size: $input_txt_size;
+      line-height: $input_txt_lh;
     }
     @media (min-width: 1500px) {
       font-size: 22px;
@@ -123,23 +126,26 @@ textarea.form-control {
 }
 .form-group_login {
   width: 100%;
-  margin-bottom: 22px;
+  margin-bottom: 17px;
   @media (min-width: 992px) {
-    margin-bottom: 25px;
+    margin-bottom: 17px;
   }
   @media (min-width: 1200px) {
-    margin-bottom: 27px;
+    margin-bottom: 25px;
   }
   @media (min-width: 1500px) {
     margin-bottom: 27px;
   }
   @media (min-width: 1920px) {
-    margin-bottom: 27px;
+    margin-bottom: 30px;
   }
 }
 .form-group_login-btn {
-  margin: 30px 0 0;
+  margin: 17px 0 0;
   position: relative;
+  @media (min-width: 992px) {
+    margin: 20px 0 0;
+  }
   @media (min-width: 1200px) {
     margin: 29px 0 0;
   }
@@ -147,7 +153,7 @@ textarea.form-control {
     margin: 29px 0 0;
   }
   @media (min-width: 1920px) {
-    margin: 29px 0 0;
+    margin: 35px 0 0;
   }
 }
 .form-group_up-login {

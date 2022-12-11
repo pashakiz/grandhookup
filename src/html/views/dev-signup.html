@@ -1,46 +1,35 @@
 <%= _.template(require('./../includes/header-index.html'))() %>
   <main class="main">
-    <div class="firstscreen">
-      <div class="firstscreen__header d-xl-none">
-        <div class="logo logo_main">
-          <div class="logo__txt">sweet girls</div>
-          <div class="logo__img"></div>
-          <div class="logo__txt">gone wild</div>
-        </div>
-      </div>
-      <div class="firstscreen__bg">
-        <video autoplay muted loop class="bg-video">
-          <source src="img/bg/video.mp4" type="video/mp4">
-        </video>
-      </div>
+    <header class="firstscreen">
+      <div class="firstscreen__bg bg1"></div>
       <div class="firstscreen__content">
-        <div class="container container_xxxl container_index">
-          <div class="firstscreen__header d-none d-xl-block">
-            <div class="logo logo_main">
-              <div class="logo__txt">sweet girls</div>
-              <div class="logo__img"></div>
-              <div class="logo__txt">gone wild</div>
+        <div class="container container_xxxl">
+          <div class="firstscreen__content-inner">
+            <div class="firstscreen__info firstscreen__info3">
+              <div class="firstscreen__header">
+                <div class="logo logo_main">Grand<span>Hook</span>Up</div>
+              </div>
+              <div class="h1_login d-lg-none">Sign up&nbsp;<br class="d-md-none"><span class="colortitle">to unlock</span>&nbsp;<br class="d-md-none">girls</div>
+              <div class="h1_login d-none d-lg-block">Sign up<br><span class="h1_login-sub">to <span class="colortitle">unlock girls</span></span></div>
+                <form action="">
+                  <div class="form-group form-group_login">
+                    <input class="form-control form-control_login" type="text" placeholder="Email">
+                  </div>
+                  <div class="form-group form-group_login">
+                    <input class="form-control form-control_login" type="password" placeholder="Password">
+                  </div>
+                  <div class="form-group form-group_login form-group_login-btn">
+                    <button class="btn-login btn btn_w100">Sign Up</button>
+                  </div>
+                </form>
             </div>
           </div>
-          <div class="firstscreen__info firstscreen__info3" style="display: block">
-            <div class="h1_login">Sign up to<br>unlock girls</div>
-            <form action="">
-              <div class="firstscreen__header-inner">
-                <div class="form-group form-group_login">
-                  <input class="form-control form-control_login" type="text" placeholder="Email">
-                </div>
-                <div class="form-group form-group_login">
-                  <input class="form-control form-control_login" type="password" placeholder="Password">
-                </div>
-                <div class="form-group form-group_login form-group_login-btn">
-                  <button class="btn-login btn btn_w100">Sign Up</button>
-                </div>
-              </div>
-            </form>
-          </div>
         </div>
       </div>
-    </div>
+    </header>
+
+
+
     <div class="secondscreen">
       <div class="container container_xxxl">
         <div class="row align-items-center">
