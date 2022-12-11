@@ -1,7 +1,11 @@
+import * as Timer from './countdown.js';
 import Splide from '@splidejs/splide';
 import '@splidejs/splide/css/core';
 //import '@splidejs/splide/css';
 import '@scss/main.scss'
+
+//init countdown.js
+document.addEventListener('DOMContentLoaded', Timer.initCountDown);
 
 //preloader
 const preloader = () => {

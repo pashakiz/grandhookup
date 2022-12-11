@@ -134,8 +134,44 @@ h1 {
   }
 }
 
-.colortitle {
+.h1_timer {
+  font-family: $font_family;
   color: $btn_bg_color;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 40px;
+  margin: 0 0 31px;
+  text-transform: uppercase;
+  @media (min-width: 992px) {
+    font-size: 35px;
+    line-height: 40px;
+    margin: 0 0 31px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0 auto;
+  }
+  @media (min-width: 1400px) {
+    font-size: 50px;
+    line-height: 56px;
+  }
+  @media (min-width: 1650px) {
+    font-size: 65px;
+    line-height: 70px;
+  }
+  @media (min-width: 1920px) {
+    font-size: 70px;
+    line-height: 85px;
+  }
+}
+
+.colortitle1 {
+  color: $btn_bg_color;
+}
+
+.colortitle2 {
+  color: $font_color;
 }
 
 h2 {
