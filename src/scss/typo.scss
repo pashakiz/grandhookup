@@ -84,10 +84,13 @@ h1 {
   font-family: $font_family;
   color: $font_color;
   font-weight: 700;
-  font-size: 41px;
+  font-size: 39px;
   line-height: 50px;
   margin: 0 0 30px;
   text-transform: uppercase;
+  @media (min-width: 323px) {
+    font-size: 41px;
+  }
   @media (min-width: 992px) {
     font-size: 35px;
     line-height: 40px;
@@ -106,8 +109,8 @@ h1 {
     line-height: 68px;
   }
   @media (min-width: 1920px) {
-    font-size: 80px;
-    line-height: 97px;
+    font-size: 78px;
+    line-height: 96px;
     margin: 0 0 25px;
   }
   .h1_login-sub {
