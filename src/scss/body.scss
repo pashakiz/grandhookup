@@ -48,6 +48,12 @@ body {
       max-width: $container-xxxl;
     }
   }
+
+  &.container_lg {
+    @media (min-width: 992px) {
+      max-width: 840px;
+    }
+  }
 }
 
 .preloader {
@@ -111,9 +117,6 @@ body {
     }
     &.no-push-bottom-mob {
       margin-bottom: $footer_height_xs;
-    }
-    .main {
-      //padding-top: 60px;
     }
     .footer {
       position: absolute;

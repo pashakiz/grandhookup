@@ -45,25 +45,19 @@
     display: block;
     width: 100%;
     max-width: 538px;
-    margin: 0 auto;
-    @media (min-width: 768px) {
-      width: 382px;
-    }
     @media (min-width: 992px) {
-      height: 60px;
-      font-size: 16px;
-      padding: 21px 9px;
+      width: auto;
+      height: 46px;
+      font-size: 17px;
+      padding: 13px 30px;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 1400px) {
       width: 100%;
+      max-width: 405px;
       margin: 0;
-    }
-    @media (min-width: 1500px) {
-      width: 100%;
-      margin: 0;
-      height: 96px;
-      font-size: 26px;
-      padding: 32px 15px;
+      height: 88px;
+      font-size: 28px;
+      padding: 27px 15px;
     }
   }
 
