@@ -78,3 +78,18 @@ if (document.querySelector('.splide_ulist') !== null) {
     },
   } ).mount();
 }
+
+if (document.querySelector('.splide_fback') !== null) {
+  new Splide( '.splide_fback', {
+    type       : 'loop',
+    arrows     : false,
+    autoHeight : true,
+    autoWidth  : true,
+    gap        : '70px',
+    breakpoints: {
+      992: {
+        gap    : '23px',
+      },
+    },
+  } ).mount();
+}

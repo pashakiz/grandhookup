@@ -295,3 +295,9 @@ textarea.form-control {
     padding-right: 15px !important;
   }
 }
+
+.mb-xl-68 {
+  @media (min-width: 1200px) {
+    margin-bottom: 68px;
+  }
+}

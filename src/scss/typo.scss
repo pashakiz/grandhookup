@@ -134,18 +134,17 @@ h1 {
   }
 }
 
-.h1_timer {
+.h1_login2 {
   font-family: $font_family;
   color: $btn_bg_color;
   font-weight: 700;
   font-size: 33px;
   line-height: 40px;
-  margin: 0 0 31px;
+  margin: 22px 0 31px;
   text-transform: uppercase;
   @media (min-width: 992px) {
     font-size: 35px;
     line-height: 40px;
-    margin: 0 0 31px;
   }
   @media (min-width: 1200px) {
     font-size: 40px;
@@ -164,6 +163,13 @@ h1 {
     font-size: 70px;
     line-height: 85px;
   }
+
+  &.h1_login2_my {
+    margin: 81px 0 31px;
+    @media (min-width: 1200px) {
+      margin: 170px 0 81px;
+    }
+  }
 }
 
 .colortitle1 {
@@ -172,6 +178,13 @@ h1 {
 
 .colortitle2 {
   color: $font_color;
+}
+
+.colortitle2xs {
+  color: $font_color;
+  @media (min-width: 1200px) {
+    color: $btn_bg_color;
+  }
 }
 
 h2 {
@@ -304,7 +317,7 @@ p {
   }
 }
 .secondscreen {
-  p {
+  p.pmain {
     font-size: 15px;
     line-height: 42px !important;
     text-align: center;

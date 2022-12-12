@@ -54,3 +54,18 @@
     }
   }
 }
+
+.splide_fback {
+  .splide__pagination {
+    margin-top: 31px;
+    @media (min-width: 992px) {
+      margin-top: 40px;
+    }
+  }
+  .splide__pagination__page {
+    background: $bg_light_2;
+    &.is-active {
+      background: $btn_bg_color;
+    }
+  }
+}
