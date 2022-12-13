@@ -65,7 +65,7 @@
     height: 909px;
   }
 
-  @include img-mask('../img/bg/mask-header.svg', 0, 0, 100%, 100%, cover, 100%);
+  @include img-mask('../img/bg/mask-header.svg', -1px, -1px, calc(100% + 2px), calc(100% + 2px), cover, 100%);
 
   &.bg1 {
     background-image: url('../img/bg/bg-header-01.jpg');
@@ -237,8 +237,9 @@
 }
 
 .secondscreen {
+  display: none;
 
-  &.secondscreen_1 {}
+  //&.secondscreen_1 {}
 
   &.secondscreen_2 {
     @media (min-width: 1200px) {

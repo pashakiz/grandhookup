@@ -26,6 +26,7 @@
     outline: none;
     box-shadow: none;
   }
+
   @media (min-width: 992px) {
     width: auto;
     height: 88px;
@@ -38,9 +39,11 @@
     height: 18px;
     margin-left: 5px;
   }
+
   .btn__icon_p {
     fill: $font_color;
   }
+
   &.btn_1 { //index
     display: block;
     width: 100%;
@@ -92,6 +95,7 @@
       padding: 19px 15px;
     }
   }
+
   &.btn_3 { //change photo
     width: 159px;
     height: 30px;
@@ -144,6 +148,7 @@
       height: 66px;
     }
   }
+
   &.btn_w100 {
     width: 100%;
   }

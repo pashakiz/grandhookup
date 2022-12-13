@@ -8,16 +8,6 @@ body {
   @media (min-width: 992px) {
     font-size: $font_size;
   }
-
-  &.body_bg {
-    background-color: $bg_dark_1;
-    @media (min-width: 1200px) {
-      background-image: url('../img/bg/bg.svg');
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      background-size: 100%;
-    }
-  }
 }
 
 .container {
@@ -147,21 +137,5 @@ body {
         margin-bottom: $footer_height;
       }
     }
-  }
-}
-
-.d-xxl-none {
-  @media (min-width: 1500px) {
-    display: none !important;
-  }
-}
-.d-xxl-block {
-  @media (min-width: 1500px) {
-    display: block !important;
-  }
-}
-.d-xxxl-block {
-  @media (min-width: 1920px) {
-    display: block !important;
   }
 }

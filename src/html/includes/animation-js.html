@@ -1,44 +1,49 @@
 <script>
     let preloader = document.body.querySelector('#page-preloader');
     let searchTime = 4000; // time for search women
-    let progressSpeed1 = 30; // time for progress bar
+    let progressSpeed1 = 30; // time for progress bar (30 for 1% of loading, 100% = 3000)
     document.addEventListener('DOMContentLoaded', initPage);
 
     function initPage() {
-        let displays = document.querySelectorAll('.display');
-        displays.forEach(display => display.style.display = 'none');
+        let firstscreens = document.querySelectorAll('.firstscreen__info');
+        firstscreens.forEach(div => div.style.display = 'none');
+        let secondscreens = document.querySelectorAll('.secondscreen');
+        secondscreens.forEach(div => div.style.display = 'none');
         showAreaIndex();
         initEvents();
     }
 
     function initEvents() {
         let btnIndex = document.querySelectorAll('.btn-index');
-        btnIndex.forEach(function(btn){ // for mobile and desktop buttons
+        btnIndex.forEach(function(btn){ // for desktop and mobile buttons (if exist)
             btn.addEventListener('click', handlerClickBtnIndex);
         });
     }
 
     function handlerClickBtnIndex(e) {
+        console.log('handlerClickBtnIndex');
         hideAreaIndex();
         showAreaSearch();
         setTimeout(goToLogin, searchTime);
     }
 
     function showAreaIndex() {
-        document.body.classList.add('body_bg');
-        document.querySelector('.display.display_01').style.display = 'block';
+        document.querySelector('.firstscreen__info.firstscreen__info1').style.display = 'block';
+        document.querySelector('.secondscreen.secondscreen_1').style.display = 'block';
     }
     function hideAreaIndex() {
-        //document.body.classList.remove('body_bg');
-        document.querySelector('.display.display_01').style.display = 'none';
+        document.querySelector('.firstscreen__info.firstscreen__info1').style.display = 'none';
+        document.querySelector('.secondscreen.secondscreen_1').style.display = 'none';
     }
 
     function showAreaSearch() {
-        document.querySelector('.display.display_02').style.display = 'block';
+        document.querySelector('.firstscreen__info.firstscreen__info2').style.display = 'block';
+        document.querySelector('.secondscreen.secondscreen_1').style.display = 'block';
         loading();
     }
     function hideAreaSearch() {
-        document.querySelector('.display.display_02').style.display = 'none';
+        document.querySelector('.firstscreen__info.firstscreen__info2').style.display = 'none';
+        document.querySelector('.secondscreen.secondscreen_1').style.display = 'none';
     }
 
     function goToLogin() {
@@ -77,7 +82,8 @@
     }
 
     function showAreaLogin() {
-        document.querySelector('.display.display_03').style.display = 'block';
+        document.querySelector('.firstscreen__info.firstscreen__info3').style.display = 'block';
+        document.querySelector('.secondscreen.secondscreen_2').style.display = 'block';
         //setTimeout(preloaderOff, 500);
     }
 

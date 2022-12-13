@@ -5,12 +5,9 @@ $body_bg_color:             #9FB7DE;
 $btn_bg_color:              #FFF705;
 $btn_bg_color_hover:        #FFFA72;
 $btn_bg_color_active:       #FFF;
-/**/$bg_dark_1:                 #1E1C1C;
-/**/$bg_dark_2:                 #434343;
+$bg_dark_1:                 #1E1C1C; //unuse
 $bg_light_1:                #DCDFE3;
 $bg_light_2:                #FFF;
-/**/$bg_light_3:                #F6EFDF;
-/**/$bg_light_4:                #E8E1DF;
 $font_color:                #FFF;
 $font_color2:               #525F73;
 $font_color3:               #6388C2;
@@ -27,8 +24,8 @@ $link_txt_family:           $font_family;
 $link_color:                $btn_bg_color;
 $link_hover_color:          $btn_bg_color_hover;
 $link_active_color:         $font_color;
-/**/$link_hover_color1:         #bd7667;
-/**/$link_hover_color2:         $link_hover_color;
+$link_hover_color1:         #bd7667; //unuse
+$link_hover_color2:         $link_hover_color; //unuse
 $footer_height:             260px;
 $footer_height_lg:          260px;
 $footer_height_xs:          245px;
@@ -86,6 +83,7 @@ $user_list_title_color:     $btn_bg_color;
     background-image: url($url);
     background-size: $bsize;
     background-position: $bpos;
+    background-repeat: no-repeat;
     z-index: 1;
   }
 }
