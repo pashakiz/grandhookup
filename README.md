@@ -9,15 +9,11 @@ https://pashakiz.github.io/grandhookup/dist/anytext.html
 
 https://pashakiz.github.io/grandhookup/dist/unsubscribe.html
 
-https://pashakiz.github.io/grandhookup/dist/login.html
-
-https://pashakiz.github.io/grandhookup/dist/signup.html
-
 https://pashakiz.github.io/grandhookup/dist/settings.html
 
-https://pashakiz.github.io/grandhookup/dist/user_list.html
-
 https://pashakiz.github.io/grandhookup/dist/user_profile.html
+
+https://pashakiz.github.io/grandhookup/dist/user_list.html
 
 # dev pages (without animation):
 https://pashakiz.github.io/grandhookup/dist/dev-index.html
