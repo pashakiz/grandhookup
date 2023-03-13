@@ -14,8 +14,6 @@ h1 {
 }
 
 .h1-index {
-  display: flex;
-  flex-direction: column;
   font-family: $font_family;
   color: $font_color;
   font-weight: 700;
@@ -24,10 +22,7 @@ h1 {
   margin: 0 0 18px;
   text-transform: uppercase;
   position: relative;
-  @media (min-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+  @media (min-width: 768px) {}
   @media (min-width: 1200px) {
     margin: 0 0 30px;
   }
@@ -63,22 +58,16 @@ h1 {
 
   .h1-index__row1 {
     font-size: 44px;
-    line-height: 53px;
-    @media (min-width: 768px) {
-      width: 150px;
-    }
+    line-height: 58px;
     @media (min-width: 1200px) {
-      width: 168px;
       font-size: 50px;
       line-height: 62px;
     }
     @media (min-width: 1400px) {
-      width: 225px;
       font-size: 66px;
       line-height: 75px;
     }
     @media (min-width: 1650px) {
-      width: 285px;
       font-size: 86px;
       line-height: 104px;
     }
@@ -88,38 +77,20 @@ h1 {
     line-height: 1;
     color: $btn_bg_color;
     @media (min-width: 768px) {
-      width: 140px;
       line-height: 52px;
     }
     @media (min-width: 1200px) {
-      width: 180px;
       font-size: 44px;
       line-height: 61px;
     }
     @media (min-width: 1400px) {
-      width: 250px;
       font-size: 62px;
       line-height: 73px;
     }
     @media (min-width: 1650px) {
-      width: 290px;
       font-size: 76px;
       line-height: 102px;
       letter-spacing: -4px;
-    }
-    span {
-      text-transform: none;
-      font-size: 41px;
-      @media (min-width: 1200px) {
-        font-size: 50px;
-      }
-      @media (min-width: 1400px) {
-        font-size: 70px;
-      }
-      @media (min-width: 1650px) {
-        font-size: 92px;
-        letter-spacing: 0;
-      }
     }
   }
   .h1-index__row3 {
@@ -150,19 +121,18 @@ h1 {
         content: '”';
         position: absolute;
         bottom: -22px;
-        right: -30px;
         line-height: 1;
         font-size: 44px;
+        margin-left: 10px;
       }
       @media (min-width: 1400px) {
         bottom: -28px;
-        right: -40px;
         font-size: 65px;
       }
       @media (min-width: 1650px) {
         bottom: -34px;
-        right: -50px;
         font-size: 83px;
+        margin-left: 20px;
       }
     }
   }
